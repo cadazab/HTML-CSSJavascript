@@ -1,0 +1,84 @@
+/* Include the border and the padding in the box size*/
+*{
+  box-sizing: border-box;
+  font-family: "verdana"
+}
+
+h1 {
+  text-align: center;
+  font-size: 175%
+}
+
+body{
+  padding: 4%;
+}
+
+.food_title{
+  border: solid black;
+  border-width: 0px 0px 5px 5px;
+  float: right;
+  font-size: 22px;
+  width: 150px;
+  padding: 2px;
+  text-align: center;
+  font-size: 125%;
+}
+
+.text{
+  padding: 60px 25px 25px 25px;
+  text-align: justify;
+}
+
+#chicken{
+  background-color: rgb(172, 71, 71);
+}
+
+#beef{
+  background-color: rgb(120, 134, 194);
+}
+
+#sushi{
+  background-color: rgb(130, 164, 135);
+}
+
+/* Desktop */
+@media (min-width: 992px){
+  .box-lg {
+    float: left;
+    width: 31.3%;
+    border: 5px solid black;
+    margin: 1%;
+    height: 450px;
+    background-color: rgba(19, 20, 19, 0.26);
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width:991px){
+  .box-md-6 {
+    float: left;
+    width: 43.2%;
+    border: 5px solid black;
+    margin: 20px;
+    background-color: rgba(19, 20, 19, 0.26);
+    height: 410px;
+  }
+  .box-md-12 {
+    float: left;
+    width: 92%;
+    border: 5px solid black;
+    margin: 20px;
+    background-color: rgba(19, 20, 19, 0.26);
+  }
+}
+
+/* Phone */
+@media (max-width: 767px){
+  .box-sm-12{
+    float: left;
+    width: 93%;
+    border: 5px solid black;
+    margin: 20px;
+    background-color: rgba(19, 20, 19, 0.26);
+  }
+}
